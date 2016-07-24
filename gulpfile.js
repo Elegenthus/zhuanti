@@ -2,7 +2,6 @@ var gulp = require('gulp'),
 concat = require('gulp-concat'),
 sass = require('gulp-sass'),
 uglify = require('gulp-uglify'),
-browserSync = require('browser-sync').create(),
 minifyCss = require('gulp-minify-css'),
 htmlmin = require('gulp-htmlmin'),
 imagemin = require('gulp-imagemin'),
@@ -34,14 +33,6 @@ gulp.task('imagemin', function () {
         .pipe(gulp.dest('dist/images'));
 });
 
-//压缩html
-gulp.task('minifyHtml', function() {
-    gulp.src('src/html/*.html')
-        .pipe(htmlmin({collapseWhitespace: true}))
-        .pipe(gulp.dest('dist'));
-        
-});
-
 // 压缩js
 gulp.task('uglifyJs', function() {
     gulp.src('src/js/*.js')
@@ -66,33 +57,17 @@ gulp.task('clean', function () {
     gulp.src('dist/js/*.js', {read: false})
         .pipe(clean());
     gulp.src('dist/images/*', {read: false})
-        .pipe(clean());
-    gulp.src('dist/*.html', {read: false})
-        .pipe(clean());   
+        .pipe(clean());  
 });
 
 gulp.task('watch', function() {
-
-    // 建立浏览器自动刷新服务器
-    browserSync.init({
-        server: {
-            baseDir: "dist"
-        }
-    });
-    // 预处理
     gulp.watch('src/sass/**', ['sass']);
     gulp.watch('src/js/**', ['uglifyJs']);
-    gulp.watch('src/html/**', ['minifyHtml']);
     gulp.watch('src/images/**', ['imagemin']);
-
-    // 自动刷新
-    gulp.watch(['dist/**'], function() {
-        browserSync.reload();
-    });
 });
 
 //如果需要合并css和js的话运行gulp concat
-gulp.task('concat',['clean','concatCss','concatJs','imagemin','minifyHtml','watch']);
+gulp.task('concat',['clean','concatCss','concatJs','imagemin','watch']);
 
 //否则只需运行gulp
-gulp.task('default',['clean','imagemin','sass','uglifyJs','minifyHtml','watch']);
+gulp.task('default',['clean','imagemin','sass','uglifyJs','watch']);
