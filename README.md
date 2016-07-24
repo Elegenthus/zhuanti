@@ -14,4 +14,4 @@
 
 `$ ninja`
 
-[编码规范](https://github.com/fex-team/styleguide)
+参考：[编码规范](https://github.com/fex-team/styleguide)
