@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>home</title>
+	<link rel="stylesheet" href="../dist/css/home.css">
+</head>
+<body>
+	<div class="head">
+	<div class="logo">
+		<img src="../src/images/logo.png" alt="">
+	</div><div class="link">
+	<a href="#">下载华师匣子：二维码</a></div>
+	</div>
+	<div class="keywords">
+		<img src="../src/images/keywords.png" alt="map" usemap="#k_words">
+		<map name="k_words" id="k_words">
+			<area shape="rect" coords="194,170,274,202" href="#" alt="一卡通">
+			<area shape="rect" coords="563,138,655,172" href="#" alt="新生群">
+			<area shape="rect" coords="897,145,959,167" href="#" alt="转户口">
+			<area shape="rect" coords="331,298,462,333" href="#" alt="华师匣子">
+			<area shape="rect" coords="840,261,1035,300" href="#" alt="自主报到系统">
+			<area shape="rect" coords="258,445,344,478" href="#" alt="校园网">
+			<area shape="rect" coords="966,388,1079,413" href="#" alt="防骗防推销">
+			<area shape="rect" coords="752,478,850,506" href="#" alt="免费手机">
+			<area shape="rect" coords="1135,523,1190,553" href="#content">
+		</map>
+	</div>
+	<div id="content">
+		<div class="banner">
+			{% for img in banner_img %}
+			  	<div class="banner_img">
+					<img src="{{ img }}">
+				</div>
+			{% endfor %}
+			<div class="switch_bt">
+				{% for img in banner_img %}
+				  	<div class="dot"></div>
+				{% endfor %}
+			</div>
+		</div>
+		<div class="news">
+			<div class="_title">
+				<div class="font_title"></div><div class="title">校园新资讯</div>
+			</div>
+			<div class="_news">
+			<div class="_inform">
+				<div class="inform"><a href="#">关于2016级新生开学缴费的通知</a></div>
+				<div class="time">07/30</div>
+			</div>
+			<div class="_inform">
+				<div class="inform"><a href="#">通知公告通知公告</a></div>
+				<div class="time">08/02</div>
+			</div>
+			<div class="_inform">
+				<div class="inform"><a href="#">通知公告通知公告通知公告通知公告</a></div>
+				<div class="time">08/12</div>
+			</div>
+			<div class="_inform">
+				<div class="inform"><a href="#">通知公告通知公告通知公告</a></div>
+				<div class="time">08/12</div>
+			</div>
+			<div class="_inform">
+				<div class="inform"><a href="#">通知公告通知公告通知</a></div>
+				<div class="time">08/12</div>
+			</div>
+			<div class="_inform">
+				<div class="inform"><a href="#">通知公告通知公告通知公告通知公告通知公告通知</a></div>
+				<div class="time">08/12</div>
+			</div>
+			<div class="_inform">
+				<div class="inform"><a href="#">通知公告通知公告通知公告通知公告通知公告</a></div>
+				<div class="time">08/12</div>
+			</div>
+			<div class="_inform">
+				<div class="inform"><a href="#">通知公告通知公告通知公告通知</a></div>
+				<div class="time">08/12</div>
+			</div>	
+			</div>
+		</div>
+		<div class="links">
+			<div class="link_s1">
+				<div class="_title">
+					<div class="font_title">
+					</div><div class="title">小鲜肉手册</div>
+				</div>
+				<div class="directory"><a href="#">报道N路线</a></div>
+				<div class="directory"><a href="#">开学备忘录</a></div>
+				<div class="directory"><a href="#">军训小贴士</a></div>
+				<div class="number">1</div>
+			</div><div class="link_s">
+				<div class="_title">
+					<div class="font_title">
+					</div><div class="title">百年大历史</div>
+				</div>
+				<div class="directory"><a href="#">历史沿革</a></div>
+				<div class="directory"><a href="#">文化底蕴</a></div>
+				<div class="directory"><a href="#">知名校友</a></div>
+				<div class="directory"><a href="#">华师传统</a></div>
+				<div class="directory"><a href="#">吉祥萌物</a></div>
+				<div class="number">2</div>
+			</div><div class="link_s">
+				<div class="_title">
+					<div class="font_title">
+					</div><div class="title">学霸修炼路	</div>
+				</div>
+				<div class="directory"><a href="#">学院介绍</a></div>
+				<div class="directory"><a href="#">专业学习</a></div>
+				<div class="directory"><a href="#">考证时间</a></div>
+				<div class="directory"><a href="#">培养计划</a></div>
+				<div class="directory"><a href="#">选课指南</a></div>
+				<div class="number">3</div>
+			</div><div class="link_s">
+				<div class="_title">
+					<div class="font_title">
+					</div><div class="title">江城好时光</div>
+				</div>
+				<div class="directory"><a href="#">山民生活</a></div>
+				<div class="directory"><a href="#">周边快游</a></div>
+				<div class="number">4</div>
+			</div>
+		</div>
+		<div class="pictures">
+			<div class="_title">
+				<div class="font_title"></div><div class="title">最美桂子山</div>
+			</div>
+			<div class="pic">
+				<div class="orange"><div class="title"><a href="#">数字校园</a></div></div>
+				</div><div class="pic1"><div class="orange"><div class="title"><a href="#">CCNU证件照</a></div></div>
+				</div><div class="pic"><div class="orange"><div class="title"><a href="#">活动掠影</a></div></div></div><div class="pic1"><div class="orange"><div class="title"><a href="#">植物鉴赏</a></div></div></div>
+		</div>
+	</div>	
+	<div class="muxi">MUXI STUDIO</div>
+		<div class="bottom">
+			<div class="link">
+				<div><a href="#">关于木犀</a></div>
+				<div class="link_s"><a href="#">下载APP</a></div>
+				<div class="link_s"><a href="#">加入我们</a></div>
+			</div>
+			<div class="ihuada">
+				<img src="../src/images/ihuada.png" alt="i华大公众号">
+				<div class="i">关注i华大公众号</div>
+			</div>
+			<div class="ihuada">
+				<img src="../src/images/guisheng.png" alt="i华大公众号">
+				<div class="i">关注华大桂声公众号</div>
+			</div>
+		</div>
+	<script src="../dist/js/jquery.js"></script>
+	<script src="../dist/js/modernizr.custom.js"></script>
+	<script src="../dist/js/banner.js"></script>
+</body>
+</html>

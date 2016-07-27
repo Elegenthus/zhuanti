@@ -26,7 +26,8 @@
 	],
 	"data":{
 		"home":{
-			"title": "hello"
+			"title": "hello",
+			"banner_img": ["/dist/images/banner_1.png","/dist/images/banner_1.png","/dist/images/banner_1.png"]
 		},
 		"second":{
 			"title": "second"
