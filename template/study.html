@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>study</title>
-	<link rel="stylesheet" href="../dist/css/history.css">
-</head>
-<body>
+{% extends 'base.html' %}
+{% block content %}
+	<main>
 	<div class="head">
 		<img src="../src/images/logo.png" alt="logo">
 	</div>
@@ -47,21 +42,5 @@
 			</div>
 		</div>
 	</div>
-	<div class="muxi">MUXI STUDIO</div>
-		<div class="bottom">
-			<div class="link">
-				<div><a href="#">关于木犀</a></div>
-				<div class="link_s"><a href="#">下载APP</a></div>
-				<div class="link_s"><a href="#">加入我们</a></div>
-			</div>
-			<div class="ihuada">
-				<img src="../src/images/ihuada.png" alt="i华大公众号">
-				<div class="i">关注i华大公众号</div>
-			</div>
-			<div class="ihuada">
-				<img src="../src/images/guisheng.png" alt="i华大公众号">
-				<div class="i">关注华大桂声公众号</div>
-			</div>
-		</div>
-</body>
-</html>
+	</main>
+{% endblock %}

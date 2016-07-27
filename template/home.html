@@ -1,17 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>home</title>
-	<link rel="stylesheet" href="../dist/css/home.css">
-</head>
-<body>
+{% extends 'base.html' %}
+{% block content %}
+<main>
 	<div class="head">
-	<div class="logo">
-		<img src="../src/images/logo.png" alt="">
-	</div><div class="link">
-	<a href="#">下载华师匣子：二维码</a></div>
-	</div>
+			<div class="logo">
+				<img src="../src/images/logo.png" alt="">
+		</div><div class="link">
+		<a href="#">下载华师匣子：二维码</a></div>
+		</div>
 	<div class="keywords">
 		<img src="../src/images/keywords.png" alt="map" usemap="#k_words">
 		<map name="k_words" id="k_words">
@@ -32,15 +27,11 @@
 			  	<div class="banner_img">
 					<img src="{{ img }}">
 				</div>
-			{% endfor %}
-			<div class="switch_bt">
-				{% for img in banner_img %}
-				  	<div class="dot"></div>
-				{% endfor %}
+			{% endfor %}<div class="switch_bt">{% for img in banner_img %}<div class="dot"></div>{% endfor %}
 			</div>
 		</div>
-		<div class="news">
-			<div class="_title">
+		<div class="nes">
+			<div class="_titl">
 				<div class="font_title"></div><div class="title">校园新资讯</div>
 			</div>
 			<div class="_news">
@@ -80,7 +71,7 @@
 		</div>
 		<div class="links">
 			<div class="link_s1">
-				<div class="_title">
+				<div class="_titl">
 					<div class="font_title">
 					</div><div class="title">小鲜肉手册</div>
 				</div>
@@ -89,7 +80,7 @@
 				<div class="directory"><a href="#">军训小贴士</a></div>
 				<div class="number">1</div>
 			</div><div class="link_s">
-				<div class="_title">
+				<div class="_titl">
 					<div class="font_title">
 					</div><div class="title">百年大历史</div>
 				</div>
@@ -100,7 +91,7 @@
 				<div class="directory"><a href="#">吉祥萌物</a></div>
 				<div class="number">2</div>
 			</div><div class="link_s">
-				<div class="_title">
+				<div class="_titl">
 					<div class="font_title">
 					</div><div class="title">学霸修炼路	</div>
 				</div>
@@ -111,7 +102,7 @@
 				<div class="directory"><a href="#">选课指南</a></div>
 				<div class="number">3</div>
 			</div><div class="link_s">
-				<div class="_title">
+				<div class="_titl">
 					<div class="font_title">
 					</div><div class="title">江城好时光</div>
 				</div>
@@ -121,33 +112,22 @@
 			</div>
 		</div>
 		<div class="pictures">
-			<div class="_title">
+			<div class="_titl">
 				<div class="font_title"></div><div class="title">最美桂子山</div>
 			</div>
-			<div class="pic">
-				<div class="orange"><div class="title"><a href="#">数字校园</a></div></div>
-				</div><div class="pic1"><div class="orange"><div class="title"><a href="#">CCNU证件照</a></div></div>
-				</div><div class="pic"><div class="orange"><div class="title"><a href="#">活动掠影</a></div></div></div><div class="pic1"><div class="orange"><div class="title"><a href="#">植物鉴赏</a></div></div></div>
+			<a href="#" class="pic_link">
+				<div class="pic">
+				<div class="orange"><div class="title">数字校园</div></div>
+				</div>
+			</a><a href="#" class="pic_link">
+				<div class="pic1"><div class="orange"><div class="title">CCNU证件照</div></div>
+				</div>
+			</a><a href="#" class="pic_link">
+				<div class="pic"><div class="orange"><div class="title">活动掠影</div></div></div>
+			</a><a href="#" class="pic_link">
+				<div class="pic1"><div class="orange"><div class="title">植物鉴赏</div></div></div>
+			</a>
 		</div>
 	</div>	
-	<div class="muxi">MUXI STUDIO</div>
-		<div class="bottom">
-			<div class="link">
-				<div><a href="#">关于木犀</a></div>
-				<div class="link_s"><a href="#">下载APP</a></div>
-				<div class="link_s"><a href="#">加入我们</a></div>
-			</div>
-			<div class="ihuada">
-				<img src="../src/images/ihuada.png" alt="i华大公众号">
-				<div class="i">关注i华大公众号</div>
-			</div>
-			<div class="ihuada">
-				<img src="../src/images/guisheng.png" alt="i华大公众号">
-				<div class="i">关注华大桂声公众号</div>
-			</div>
-		</div>
-	<script src="../dist/js/jquery.js"></script>
-	<script src="../dist/js/modernizr.custom.js"></script>
-	<script src="../dist/js/banner.js"></script>
-</body>
-</html>
+	</main>
+{% endblock %}

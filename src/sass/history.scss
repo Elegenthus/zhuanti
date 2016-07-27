@@ -10,8 +10,8 @@ body{
 	font-family: MicrosoftYaHei;
 	font-size: 14px;
 	color: #000000;
+
 	word-spacing: 25px;
-	line-height: 1.5;
 	background-color: $l_orange;
 }
 img{
@@ -73,6 +73,7 @@ a{
 		}
 		.essay{
 			margin: 44px 82px 93px 83px;
+			line-height: 1.5;
 		}
 		
 	}
@@ -150,6 +151,7 @@ a{
 							padding-top: 16px;
 							.news{
 								font-size: 12px;
+								line-height: 1.5;
 							}  
 							.bot{
 								margin-top: 30px;

@@ -7,36 +7,43 @@
 			"async": false
 		},
 		{
-			"name": "second",
-			"endpoint": "/second",
-			"template": "home",
+			"name": "life",
+			"endpoint": "/life",
+			"template": "life",
 			"async": false
 		},
 		{
-			"name": "course",
-			"endpoint": "/course",
-			"template": "home",
+			"name": "freshman",
+			"endpoint": "/freshman",
+			"template": "freshman",
 			"async": false
 		},
 		{
-			"name": "api.courses",
-			"endpoint": "/api/v1.0/courses",
-			"async": true
+			"name": "history",
+			"endpoint": "/history",
+			"template": "history",
+			"async": false
+		},{
+			"name": "news",
+			"endpoint": "/news",
+			"template": "news",
+			"async": false
+		},{
+			"name": "photos",
+			"endpoint": "/photos",
+			"template": "photos",
+			"async": false
+		},{
+			"name": "study",
+			"endpoint": "/study",
+			"template": "study",
+			"async": false
 		}
 	],
 	"data":{
 		"home":{
 			"title": "hello",
 			"banner_img": ["/dist/images/banner_1.png","/dist/images/banner_1.png","/dist/images/banner_1.png"]
-		},
-		"second":{
-			"title": "second"
-		},
-		"course":{
-			"title": "我是course页面哈哈哈哈哈"
-		},
-		"api.courses":{
-			"title": "second"
 		}
 	}
 }

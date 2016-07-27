@@ -3,41 +3,31 @@
 <head>
 	<meta charset="UTF-8">
 	<title>2016新生专题</title>
-	<link rel="stylesheet" href="/dist/css/reset.css">
-	<link rel="stylesheet" href="/dist/css/index.css">
+	<link rel="stylesheet" href="/dist/css/history.css">
 	<link rel="stylesheet" href="/dist/css/home.css">
 </head>
 <body>
-	<header>
-		<div class="logo">
-			<img src="/dist/images/guisheng.png">
-		</div>
-		<div class="main_title">2016新生专题</div>
-		<div class="down_load">下载华师匣子：二维码</div>
-	</header>
 	{% block content %}{% endblock %}
-	<div class="mixu">MUXI STUDIO</div>
+	<div class="muxi">MUXI STUDIO</div>
 	<footer>
-		<div class="friends_link">
+		<div class="bottom">
 			<div class="link">
-				<a href="###">关于木犀</a>
-				<a href="###">下载APP</a>
-				<a href="###">下载APP</a>
+				<div><a href="#">关于木犀</a></div>
+				<div class="link_s"><a href="#">下载APP</a></div>
+				<div class="link_s"><a href="#">加入我们</a></div>
 			</div>
 			<div class="ihuada">
-				<div>
-					<img src="/dist/images/ihuada_gzh.png">
-					<div class="description">关注i华大公众号</div>
-				</div>
+				<img src="../src/images/ihuada.png" alt="i华大公众号">
+				<div class="i">关注i华大公众号</div>
 			</div>
-			<div class="guisheng">
-				<div>
-					<img src="/dist/images/guishang_gzh.png">
-					<div class="description">关注华大桂声公众号</div>
-				</div>
+			<div class="ihuada">
+				<img src="../src/images/guisheng.png" alt="i华大公众号">
+				<div class="i">关注华大桂声公众号</div>
 			</div>
 		</div>
 	</footer>
-	<script src="dist/js/index.js"></script>
+	<script src="../dist/js/jquery.js"></script>
+	<script src="../dist/js/modernizr.custom.js"></script>
+	<script src="../dist/js/banner.js"></script>
 </body>
 </html>

@@ -1,8 +1,8 @@
-$orange:#f4991a;
 $l_orange:#f7f3d6;
 $s_orange:#fcca76;
 $yellow:#fff799;
 $grey:#b3b3b3;
+$orange:#f4991a;
 $red:#ff6640;
 $l_yellow:#faa61a;
 $black:#000000;
@@ -15,7 +15,9 @@ body{
 	font-size: 14px;
 	color: #000000;
 	word-spacing: 25px;
+	// line-height: 1;
 	background-color: $l_orange;
+	min-width: 930px;
 }
 img{
 	border: none;
@@ -33,8 +35,8 @@ a:hover{
 	cursor: pointer;
 }
 .head{
-	margin-left: 170px;
-	margin-top: 15px;
+	margin: 15px auto;
+	width: 930px;
 	.logo{
 		display: inline-block;
 		vertical-align: middle;
@@ -63,7 +65,7 @@ a:hover{
 	margin: 50px auto;
 	width: 780px;
 }
-._title{
+._titl{
 	margin-left: 19px;
 	.font_title{
 		background-color: $orange;
@@ -79,7 +81,7 @@ a:hover{
 		display: inline-block;
 	}
 }
-.news{
+.nes{
 	margin-top: 48px;
 	padding: 16px 21px 17px 0px;
 	box-sizing:border-box;
@@ -106,7 +108,7 @@ a:hover{
 }
 .links{
 	margin-top: 56px;
-	._title{
+	._titl{
 		margin-top: 16px;
 	}
 	.link_s{
@@ -165,6 +167,7 @@ a:hover{
 		background-repeat: no-repeat;
 	}
 }
+
 .orange{
 	background-color: rgba(249, 185, 73,0.75);
 	width: 210px;
@@ -175,13 +178,16 @@ a:hover{
 	.title{
 		margin-left: 9px;
 		font-size: 18px;
-		//position: relative;
-		a{
-			color: $white;
-		}
 	}
 }
-
+.pic_link{
+	color:$white;
+	display: inline-block;
+	vertical-align: middle;
+}
+.pic_link:hover{
+	color:$white;
+}
 .muxi{
 	margin-top: -7px;
 	text-align: center;
