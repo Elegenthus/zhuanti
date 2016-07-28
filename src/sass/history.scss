@@ -19,7 +19,6 @@ img{
 }
 a{
 	text-decoration: none;
-	color: #5c75b8;
 }
 .head{
 	margin-left: 170px;
@@ -56,6 +55,7 @@ a{
 		background-color: #ffffff;
 		display: inline-block;
 		vertical-align: top;
+		border-radius: 5px;
 		.title{
 			text-align: center;
 			font-size: 18px;
@@ -105,10 +105,12 @@ a{
 				.wb{
 						background-color: #ffffff;
 						margin-top: 12px;
-						//height: 355px;
+						padding-top: 16px;
+						height: 355px;
+						box-sizing: border-box;
 						padding-bottom: 12px;
 						.logo{
-							margin-top: 16px;
+							//margin-top: 16px;
 							margin-left: 16px;
 							.log{
 								display: inline-block;
@@ -149,9 +151,13 @@ a{
 							border-top: 1px solid $l_yellow;
 							border-bottom: 1px solid $l_yellow;
 							padding-top: 16px;
+							box-sizing: border-box;
+							height: 188px;
 							.news{
 								font-size: 12px;
 								line-height: 1.5;
+								padding-left: 1px;
+								padding-right: 1px;
 							}  
 							.bot{
 								margin-top: 30px;
@@ -167,6 +173,9 @@ a{
 									vertical-align: middle;
 									margin-left: 25px;
 									font-size: 12px;
+									a{
+										color:#5c75b8;
+									}
 									.fa{
 										margin-left: 10px;
 									}
@@ -185,11 +194,8 @@ a{
 			}
 		}
 }
-.muxi{
-	margin-top: 83px;
-	text-align: center;
-	color: $orange;
-	font-size: 18px;
+.occupy{
+	height: 60px;
 }
 .bottom{
 	text-align: center;
