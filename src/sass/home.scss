@@ -15,9 +15,8 @@ body{
 	font-size: 14px;
 	color: #000000;
 	word-spacing: 25px;
-	// line-height: 1;
 	background-color: $l_orange;
-	min-width: 930px;
+	min-width: 940px;
 }
 img{
 	border: none;
@@ -26,17 +25,17 @@ a{
 	text-decoration: none;
 	color: $black;
 	outline: none;
+	cursor: pointer;
 }
 area{
 	outline: none;
 }
 a:hover{
 	color: $orange;
-	cursor: pointer;
 }
 .head{
 	margin: 15px auto;
-	width: 930px;
+	width: 940px;
 	.logo{
 		display: inline-block;
 		vertical-align: middle;
@@ -67,17 +66,19 @@ a:hover{
 }
 ._titl{
 	margin-left: 19px;
+	font-size: 0px;
 	.font_title{
 		background-color: $orange;
 		width: 6px;
 		height: 24px;
 		display: inline-block;
-		font-size: 0px;
+		vertical-align: bottom;
 	} 
 	.title{
 		font-size: 20px;
 		color: $orange;
 		margin-left: 15px;
+		vertical-align: bottom;
 		display: inline-block;
 	}
 }
@@ -98,6 +99,10 @@ a:hover{
 		.inform{
 			display: inline-block;
 			vertical-align: middle;
+			text-overflow:ellipsis;
+  			overflow:hidden;
+  			white-space:nowrap;
+  			width: 316px;
 		}
 		.time{
 			display: inline-block;
@@ -150,29 +155,25 @@ a:hover{
 	.pic{
 		display: inline-block;
 		vertical-align: middle;
-		background-image: url(../images/pictures.png);
 		width:380px;
 		height: 286px;
 		margin-top: 26px;
 		margin-right: 19px;
-		background-repeat: no-repeat;
 	}
 	.pic1{
 		display: inline-block;
 		vertical-align: middle;
-		background-image: url(../images/pictures.png);
 		width:380px;
 		height: 286px;
 		margin-top: 26px;
-		background-repeat: no-repeat;
 	}
 }
-
 .orange{
 	background-color: rgba(249, 185, 73,0.75);
 	width: 210px;
 	height: 67px;
-	margin-top: 130px;
+	position: absolute;
+	margin-top: -156px;
 	box-sizing: border-box;
 	padding-top: 24px;
 	.title{

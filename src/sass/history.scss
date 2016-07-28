@@ -10,7 +10,6 @@ body{
 	font-family: MicrosoftYaHei;
 	font-size: 14px;
 	color: #000000;
-
 	word-spacing: 25px;
 	background-color: $l_orange;
 }
@@ -21,37 +20,38 @@ a{
 	text-decoration: none;
 }
 .head{
-	margin-left: 170px;
-	margin-top: 15px;
+	width: 940px;
+	margin: 15px auto;
 	img{
 		width: 364px;
 	}
 }
 ._title{
-	margin-left: 170px;
-	margin-top: 70px;
+	width: 940px;
+	margin: 70px auto;
+	font-size: 0px;
 	.font_title{
 		background-color: $orange;
 		width: 6px;
 		height: 24px;
 		display: inline-block;
-		//vertical-align: bottom;
-		font-size: 0px;
+		vertical-align: bottom;
 	} 
 	.title{
 		font-size: 20px;
 		color: $orange;
 		margin-left: 13px;
-		//vertical-align: bottom;
+		vertical-align: bottom;
 		display: inline-block;
 	}
 }
 .content{
 	margin: 40px auto;
+	margin-top: -30px;
 	width: 980px;
+	min-width: 980px;
 	.article{
 		width: 655px;
-		height: 770px;
 		background-color: #ffffff;
 		display: inline-block;
 		vertical-align: top;
@@ -75,125 +75,122 @@ a{
 			margin: 44px 82px 93px 83px;
 			line-height: 1.5;
 		}
-		
 	}
-	.side{
-			margin-left: 45px;
-			display: inline-block;
-			vertical-align: top;
-			width: 280px;
-			height: 614px;
-			background-color: $yellow;
-			.ad{
-				width: 240px;
-				height: 160px;
-				margin: 16px 20px 31px;
-				background-color: #ffffff;
-				padding-top: 1px;
-				.ads{
-					font-size: 32px;
-					color:$red;
-					margin: 58px 72px 74px 72px;
-				}
-			}
-			.weibo{
-				margin: 31px 20px 16px 20px;
-				.title{
-					font-size: 20px;
-					color: $red;
-				}
-				.wb{
-						background-color: #ffffff;
-						margin-top: 12px;
-						padding-top: 16px;
-						height: 355px;
-						box-sizing: border-box;
-						padding-bottom: 12px;
-						.logo{
-							//margin-top: 16px;
-							margin-left: 16px;
-							.log{
-								display: inline-block;
-								width: 75px;
-								height: 75px;
-								vertical-align: middle;
-							}
-							.guisheng{
-								display: inline-block;
-								vertical-align: middle;
-								font-family: 16px;
-								margin-left: 32px;
-							}
-						}
-						.button{
-							margin-top: 5px;
-							margin-left: 19px;
-							.bu{
-								color: $red;
-								padding:5px 8px;
-								background-color: #ffffff;
-								border-color: $l_yellow;
-								border-width: 1px;
-								cursor: pointer;
-								border-style: solid;
-							}
-							.bu:hover{
-								background-color:$grey;
-							    background:-webkit-linear-gradient(#f5f5f5 5%, #ededed 100%);
-							    background:-o-linear-gradient(#f5f5f5 5%, #ededed 100%);
-							    background:linear-gradient(#f5f5f5 5%, #ededed 100%);
-							    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#ededed',GradientType=0);
-							}
-						}
-						.comment{
-							border-width: 1px;
-							margin: 8px 18px;
-							border-top: 1px solid $l_yellow;
-							border-bottom: 1px solid $l_yellow;
-							padding-top: 16px;
-							box-sizing: border-box;
-							height: 188px;
-							.news{
-								font-size: 12px;
-								line-height: 1.5;
-								padding-left: 1px;
-								padding-right: 1px;
-							}  
-							.bot{
-								margin-top: 30px;
-								margin-bottom: 15px;
-								.time{
-									display: inline-block;
-									vertical-align: middle;
-									font-size: 12px;
-									color: $grey;
-								}
-								.forward{
-									display: inline-block;
-									vertical-align: middle;
-									margin-left: 25px;
-									font-size: 12px;
-									a{
-										color:#5c75b8;
-									}
-									.fa{
-										margin-left: 10px;
-									}
-								}
-							}
-
-						}
-						.next_button{
-							width: 10px;
-							height: 10px;
-							margin: 15px 115px 0px 115px;
-						}
-
-					}
-				
-			}
-		}
 }
+.side{
+	margin-left: 45px;
+	display: inline-block;
+	vertical-align: top;
+	width: 280px;
+	height: 614px;
+	background-color: $yellow;
+	.ad{
+		width: 240px;
+		height: 160px;
+		margin: 16px 20px 31px;
+		background-color: #ffffff;
+		padding-top: 1px;
+	}
+	.ads{
+		font-size: 32px;
+		color:$red;
+		margin: 58px 72px 74px 72px;
+	}
+	.weibo{
+		margin: 31px 20px 16px 20px;
+		.title{
+			font-size: 20px;
+			color: $red;
+		}		
+	}
+}
+.wb{
+	background-color: #ffffff;
+	margin-top: 12px;
+	padding-top: 16px;
+	height: 355px;
+	box-sizing: border-box;
+	padding-bottom: 12px;
+	.logo{
+		margin-left: 16px;
+		.log{
+			display: inline-block;
+			width: 75px;
+			height: 75px;
+			vertical-align: middle;
+		}
+		.guisheng{
+			display: inline-block;
+			vertical-align: middle;
+			font-family: 16px;
+			margin-left: 32px;
+		}
+	}
+	.button{
+		margin-top: 5px;
+		margin-left: 19px;
+		.bu{
+			color: $red;
+			padding:5px 8px;
+			background-color: #ffffff;
+			border-color: $l_yellow;
+			border-width: 1px;
+			cursor: pointer;
+			border-style: solid;
+		}
+		.bu:hover{
+			background-color:$grey;
+			background:-webkit-linear-gradient(#f5f5f5 5%, #ededed 100%);
+			background:-o-linear-gradient(#f5f5f5 5%, #ededed 100%);
+			background:linear-gradient(#f5f5f5 5%, #ededed 100%);
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#ededed',GradientType=0);
+		}
+	}
+	.next_button{
+		cursor: pointer;
+		width: 10px;
+		height: 10px;
+		margin: 15px 115px 0px 115px;
+	}
+
+}
+.forward{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 25px;
+	font-size: 12px;
+	a{
+		color:#5c75b8;
+	}
+	.fa{
+		margin-left: 10px;
+	}
+}
+.comment{
+	border-width: 1px;
+	margin: 8px 18px;
+	border-top: 1px solid $l_yellow;
+	border-bottom: 1px solid $l_yellow;
+	padding-top: 16px;
+	box-sizing: border-box;
+	.news{
+		font-size: 12px;
+		line-height: 1.5;
+		padding-left: 1px;
+		padding-right: 1px;
+	}  
+	.bot{
+		margin-top: 30px;
+		margin-bottom: 15px;
+		.time{
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 12px;
+			color: $grey;
+		}						
+	}
+}
+
 .occupy{
 	height: 60px;
 }
